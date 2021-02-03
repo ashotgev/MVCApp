@@ -9,6 +9,7 @@ namespace MVCApp.Models
 {
     public class Journal
     {
+        [Required]
         public int Id { get; set; }
         [Required]
         [MinLength(9), MaxLength(9)]
