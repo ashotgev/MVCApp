@@ -16,9 +16,16 @@ namespace MVCApp.Models
         public string ISSN { get; set; }
         [Required]
         public string Name { get; set; }
-        public string Type { get; set; }
+        public JornalType Type { get; set; }
         public int PageCount { get; set; }
         public bool InWoS { get; set; }
         public bool InScopus { get; set; }
+    }
+    public enum JornalType
+    {
+        Scientific,
+        Popular,
+        Entertainment,
+        Fashion
     }
 }
