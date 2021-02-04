@@ -13,7 +13,7 @@ namespace MVCApp.Services
     {
         public static IServiceCollection AddDependencyInjection(this IServiceCollection services)
         {
-            services.AddScoped<IJournalService, JournalService>();
+            services.AddSingleton<IJournalService, JournalService>();
             return services;
         }
     }

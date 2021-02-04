@@ -2,11 +2,14 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    
 }
-
+.container {
+    background-image: url(/images/background28.jpg);
+}
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
@@ -20,7 +23,7 @@ a {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #1b6ec2;
+  background-color: #e5e5e5;
   border-color: #1861ac;
 }
 
