@@ -61,9 +61,16 @@
                 @Html.DisplayFor(modelItem => item.InScopus)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+
+                @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
+
+                <a href='@Url.Action("Edit",  new { id = item.Id})'><img title="Edit" alt="Edit" width="15" height="20" src="images/edit.png" style="vertical-align:middle;margin:0px 5px" /></a>
+                <a href='@Url.Action("Details",  new { id = item.Id})'><img title="Details" als="Details" width="15" height="20" src="images/details.png" style="vertical-align:middle;margin:0px 5px"/></a>
+                <a href='@Url.Action("Delete",  new { id = item.Id})'><img title="Delate" alt="Delate" width="15" height="20" src="images/delete.png" style="vertical-align:middle;margin:00px 5px"/></a>
+
+
             </td>
         </tr>
 }
